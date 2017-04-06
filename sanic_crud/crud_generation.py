@@ -30,7 +30,7 @@ def generate_crud(app, model_array):
         )
 
     # Add base route
-    app.add_route(_generate_base_route(model_array), '/', methods=['GET'])
+    app.add_route(_generate_base_route(model_array), '/api', methods=['GET'])
 
 
 def _generate_base_route(model_array):
